@@ -32,6 +32,7 @@ li {
 
 body {
   height: fit-content;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 :root {
@@ -130,6 +131,10 @@ i.fa-solid.fa-house {
   transition: all 0.7s;
   color: black !important;
   background-color: whitesmoke;
+}
+
+.nav-left-phone-items > li {
+  font-size: 1.2em;
 }
 
 .nav-left-phone:hover .nav-left-phone-items {
@@ -306,6 +311,18 @@ li.hamb-life-items > ul {
   transition: all 1s;
 }
 
+li.hamb-smart-items > ul > li > div:hover {
+  color: orangered;
+}
+
+li.hamb-smart-items > ul > li > div > h3 {
+  text-align: center;
+}
+
+li.hamb-life-items > ul > li > div:hover {
+  color: orangered;
+}
+
 #search-sec {
   position: absolute;
   top: 0;
@@ -436,7 +453,7 @@ section#banner > div#banner-slider3 {
 }
 
 section#banner > div#banner-slider4 {
-  background-image: url(../media/header4.webp);
+  background-image: url(../media/header4.PNG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -448,12 +465,48 @@ section#banner > div#banner-slider4 {
   transition: all 1s;
 }
 
-section#banner > div.banner-slider > div.banner-slider-container {
+section#banner > div.banner-slider#banner-slider1 > div.banner-slider-container {
   position: absolute;
   width: 30%;
   min-height: fit-content;
   top: 20%;
   right: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+section#banner > div.banner-slider#banner-slider2 > div.banner-slider-container {
+  position: absolute;
+  width: 30%;
+  min-height: fit-content;
+  top: 20%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+section#banner > div.banner-slider#banner-slider3 > div.banner-slider-container {
+  position: absolute;
+  width: 30%;
+  min-height: fit-content;
+  top: 8%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+section#banner > div.banner-slider#banner-slider4 > div.banner-slider-container {
+  position: absolute;
+  width: 30%;
+  min-height: fit-content;
+  top: 20%;
+  left: 10%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -517,20 +570,26 @@ section#featured-product > ul > li {
 #grid-slider1-top-item1 {
   height: 330px;
   width: 50%;
-  /* grid-area: item1; */
-  background-image: url(../media/header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  /* object-fit: contain; */
-  /* position: relative; */
-  /* flex: 1 0 435px; */
+}
+
+#grid-slider1-top-item1 > img {
+  width: 100%;
+  height: 100%;
 }
 
 #grid-slider1-top-item2 {
   width: 50%;
-  /* flex: 1 0 435px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+}
+
+#grid-slider1-top-item2 > img {
+  width: 40%;
+  height: 25%;
 }
 
 #grid-slider1-bott {
@@ -629,20 +688,26 @@ section#featured-product > ul > li {
 #grid-slider2-top-item1 {
   height: 330px;
   width: 50%;
-  /* grid-area: item1; */
-  background-image: url(../media/header2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  /* object-fit: contain; */
-  /* position: relative; */
-  /* flex: 1 0 435px; */
+}
+
+#grid-slider2-top-item1 > img {
+  width: 100%;
+  height: 100%;
 }
 
 #grid-slider2-top-item2 {
   width: 50%;
-  /* flex: 1 0 435px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+}
+
+#grid-slider2-top-item2 > img {
+  width: 40%;
+  height: 25%;
 }
 
 #grid-slider2-bott {
@@ -741,20 +806,26 @@ section#featured-product > ul > li {
 #grid-slider3-top-item1 {
   height: 330px;
   width: 50%;
-  /* grid-area: item1; */
-  background-image: url(../media/header3.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  /* object-fit: contain; */
-  /* position: relative; */
-  /* flex: 1 0 435px; */
+}
+
+#grid-slider3-top-item1 > img {
+  width: 100%;
+  height: 100%;
 }
 
 #grid-slider3-top-item2 {
   width: 50%;
-  /* flex: 1 0 435px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+}
+
+#grid-slider3-top-item2 > img {
+  width: 40%;
+  height: 25%;
 }
 
 #grid-slider3-bott {
@@ -853,20 +924,26 @@ section#featured-product > ul > li {
 #grid-slider4-top-item1 {
   height: 330px;
   width: 50%;
-  /* grid-area: item1; */
-  background-image: url(../media/header4.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  /* object-fit: contain; */
-  /* position: relative; */
-  /* flex: 1 0 435px; */
+}
+
+#grid-slider4-top-item1 > img {
+  width: 100%;
+  height: 100%;
 }
 
 #grid-slider4-top-item2 {
   width: 50%;
-  /* flex: 1 0 435px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+}
+
+#grid-slider4-top-item2 > img {
+  width: 40%;
+  height: 25%;
 }
 
 #grid-slider4-bott {
@@ -948,6 +1025,14 @@ section#sec-support > div#sec-support-items > div.sec-support-item {
   height: fit-content;
 }
 
+section#sec-support > div#sec-support-items > div.sec-support-item:hover {
+  color: orangered;
+}
+
+section#sec-support > div#sec-support-items > div.sec-support-item:hover > i {
+  color: orangered;
+}
+
 div.sec-support-item > i {
   height: 60%;
   text-align: center;
@@ -955,6 +1040,7 @@ div.sec-support-item > i {
   align-items: center;
   font-size: 4em;
   /* background-color: yellow; */
+  color: gray;
 }
 
 div.sec-support-item > h3 {
@@ -1143,6 +1229,7 @@ footer li:hover {
   #grid-slider1-bott-item6 {
     height: 192px;
     width: 48% !important;
+    gap: 0 !important;
   }
   #grid-slider2-top {
     padding: 16px 20px;
@@ -1166,6 +1253,7 @@ footer li:hover {
   #grid-slider2-bott-item6 {
     height: 192px;
     width: 48% !important;
+    gap: 0 !important;
   }
   #grid-slider3-top {
     padding: 16px 20px;
@@ -1189,6 +1277,7 @@ footer li:hover {
   #grid-slider3-bott-item6 {
     height: 192px;
     width: 48% !important;
+    gap: 0 !important;
   }
   #grid-slider4-top {
     padding: 16px 20px;
@@ -1210,6 +1299,7 @@ footer li:hover {
   #grid-slider4-bott-item4 {
     height: 192px;
     width: 48% !important;
+    gap: 0 !important;
   }
   div#sec-support-items {
     flex-wrap: wrap;
@@ -1219,6 +1309,11 @@ footer li:hover {
   }
   section#banner > div > div.banner-sabet-slider > div.one {
     width: 44px !important;
+  }
+  section#featured-product > ul > li {
+    font-size: 0.6em;
+    height: 20px;
+    font-weight: bold;
   }
 }
 .menu-left-icons > ul {

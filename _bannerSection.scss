@@ -95,7 +95,7 @@ section#banner>div#banner-slider3 {
     transition: all 1s;
 }
 section#banner>div#banner-slider4 {
-    background-image: url(../media/header4.webp);
+    background-image: url(../media/header4.PNG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,13 +107,49 @@ section#banner>div#banner-slider4 {
     transition: all 1s;
 }
 
-section#banner>div.banner-slider>div.banner-slider-container {
+section#banner>div.banner-slider#banner-slider1>div.banner-slider-container {
     // background-color: aqua;
     position: absolute;
     width: 30%;
     min-height: fit-content;
     top: 20%;
     right: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+section#banner>div.banner-slider#banner-slider2>div.banner-slider-container {
+    // background-color: aqua;
+    position: absolute;
+    width: 30%;
+    min-height: fit-content;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+section#banner>div.banner-slider#banner-slider3>div.banner-slider-container {
+    // background-color: aqua;
+    position: absolute;
+    width: 30%;
+    min-height: fit-content;
+    top: 8%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+section#banner>div.banner-slider#banner-slider4>div.banner-slider-container {
+    // background-color: aqua;
+    position: absolute;
+    width: 30%;
+    min-height: fit-content;
+    top: 20%;
+    left: 10%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

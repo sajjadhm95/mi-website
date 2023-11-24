@@ -85,6 +85,8 @@
     #grid-slider1-bott-item6 {
         height: 192px;
         width: 48% !important;
+        gap: 0 !important;
+
     }
 
     #grid-slider2-top {
@@ -112,6 +114,8 @@
     #grid-slider2-bott-item6 {
         height: 192px;
         width: 48% !important;
+        gap: 0 !important;
+
     }
 
     #grid-slider3-top {
@@ -139,6 +143,8 @@
     #grid-slider3-bott-item6 {
         height: 192px;
         width: 48% !important;
+        gap: 0 !important;
+
     }
 
     #grid-slider4-top {
@@ -164,6 +170,7 @@
     #grid-slider4-bott-item4 {
         height: 192px;
         width: 48% !important;
+        gap: 0 !important;
     }
 
     div#sec-support-items {
@@ -175,6 +182,12 @@
     }
     section#banner > div > div.banner-sabet-slider > div.one {
         width: 44px !important;
+    }
+
+    section#featured-product>ul>li {
+        font-size: 0.6em;
+        height: 20px;
+        font-weight: bold;
     }
 }
 

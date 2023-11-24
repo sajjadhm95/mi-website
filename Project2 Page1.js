@@ -100,16 +100,16 @@ lifeHamb.addEventListener('click', () => {
 
 // ..........................................banner section..........................................
 
-let playIcon = document.querySelector('div.banner-sabet-slider>i.bx-play')
-let pauseIcon = document.querySelector('div.banner-sabet-slider>i.bx-pause')
-playIcon.addEventListener('click', () => {
-    playIcon.classList.toggle('hide')
-    pauseIcon.classList.toggle('hide')
-})
-pauseIcon.addEventListener('click', () => {
-    playIcon.classList.toggle('hide')
-    pauseIcon.classList.toggle('hide')
-})
+// let playIcon = document.querySelector('div.banner-sabet-slider>i.bx-play')
+// let pauseIcon = document.querySelector('div.banner-sabet-slider>i.bx-pause')
+// playIcon.addEventListener('click', () => {
+//     playIcon.classList.toggle('hide')
+//     pauseIcon.classList.toggle('hide')
+// })
+// pauseIcon.addEventListener('click', () => {
+//     playIcon.classList.toggle('hide')
+//     pauseIcon.classList.toggle('hide')
+// })
 
 let bannerSlides = document.querySelectorAll('div.banner-slider')
 let bannerChevLeft = document.querySelector('div#banner-sabet>i.bx.bxs-chevron-left')
@@ -132,7 +132,7 @@ function slidernext() {
 }
 
 function sliderBott() {
-    count1 = count ;
+    count1 = count;
     bannerBottSlider.forEach(e => {
         e.classList.remove('por');
     });
@@ -153,7 +153,7 @@ bannerChevRight.addEventListener('click', () => {
     bannerSlides.forEach(e => {
         e.classList.add('hide')
     })
-    
+
     bannerBottSlider.forEach(e => {
         e.classList.remove('por');
     });
@@ -161,7 +161,7 @@ bannerChevRight.addEventListener('click', () => {
         count = -1
     }
     count++
-    count1 = count ;
+    count1 = count;
     bannerSlides[count].classList.remove('hide')
     bannerBottSlider[count1].classList.add('por');
     intervalId = setInterval(() => {
@@ -183,7 +183,7 @@ bannerChevLeft.addEventListener('click', () => {
         count = bannerSlides.length
     }
     count--
-    count1 = count ;
+    count1 = count;
     bannerSlides[count].classList.remove('hide')
     bannerBottSlider[count1].classList.add('por');
     intervalId = setInterval(() => {
@@ -219,8 +219,21 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    breakpoints: {
+        724: {
+            slidesPerView: 1
+        }
+    }
 });
 
+window.addEventListener('resize', function () {
+    if (window.innerWidth < 724) {
+        swiper.params.slidesPerView = 1;
+    } else {
+        swiper.params.slidesPerView = 3;
+    }
+    swiper.update(); // Update the swiper instance after changing slidesPerView
+});
 // ..........................................search section..........................................
 
 const searchIcon = document.querySelector('li.search');
@@ -240,7 +253,9 @@ document.addEventListener('click', (event) => {
 
 // JavaScript
 document.addEventListener('DOMContentLoaded', function () {
-    var navItems = document.querySelectorAll('.nav-left-phone');
+    var navItems1 = document.querySelectorAll('.nav-left-phone');
+    var navItems2 = document.querySelectorAll('.nav-left-smart');
+    var navItems3 = document.querySelectorAll('.nav-left-life');
 
 
     function addDarkClass() {
@@ -261,19 +276,28 @@ document.addEventListener('DOMContentLoaded', function () {
         foo.classList.remove('dark');
     }
 
-    navItems.forEach(function (navItem) {
+    navItems1.forEach(function (navItem) {
+        navItem.addEventListener('mouseover', addDarkClass);
+        navItem.addEventListener('mouseleave', removeDarkClass);
+    });
+    navItems2.forEach(function (navItem) {
+        navItem.addEventListener('mouseover', addDarkClass);
+        navItem.addEventListener('mouseleave', removeDarkClass);
+    });
+    navItems3.forEach(function (navItem) {
         navItem.addEventListener('mouseover', addDarkClass);
         navItem.addEventListener('mouseleave', removeDarkClass);
     });
 });
 
-const logoIcon = document.querySelector('i.fa-brands.fa-xing')
-const HomeIcon = document.querySelector('i.bx.bxs-balloon')
-logoIcon.addEventListener('mouseenter', ()=>{
-    logoIcon.classList.add('hide')
-    HomeIcon.classList.remove('hide')
-});
-logoIcon.addEventListener('mouseleave', ()=>{
-    logoIcon.classList.remove('hide')
-    HomeIcon.classList.add('hide')
-});
+// const logoIcon = document.querySelector('i.fa-brands.fa-xing')
+// const HomeIcon = document.querySelector('i.bx.bxs-balloon')
+// logoIcon.addEventListener('mouseenter', () => {
+//     logoIcon.classList.add('hide')
+//     HomeIcon.classList.remove('hide')
+// });
+// logoIcon.addEventListener('mouseleave', () => {
+//     logoIcon.classList.remove('hide')
+//     HomeIcon.classList.add('hide')
+// });
+// console.log('sadadaddad');

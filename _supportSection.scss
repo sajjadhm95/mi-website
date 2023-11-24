@@ -38,6 +38,13 @@ section#sec-support>div#sec-support-items>div.sec-support-item {
     // background-color: blue;
 }
 
+section#sec-support>div#sec-support-items>div.sec-support-item:hover{
+    color: orangered;
+}
+section#sec-support>div#sec-support-items>div.sec-support-item:hover>i{
+    color: orangered;
+}
+
 div.sec-support-item>i {
     height: 60%;
     text-align: center;
@@ -45,6 +52,7 @@ div.sec-support-item>i {
     align-items: center;
     font-size: 4em;
     /* background-color: yellow; */
+    color: gray;
 }
 
 div.sec-support-item>h3 {

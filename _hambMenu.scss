@@ -83,3 +83,15 @@ li.hamb-life-items>ul {
     // background-color: red;
     transition: all 1s;
 }
+
+li.hamb-smart-items>ul>li>div:hover {
+    color: orangered;
+}
+
+li.hamb-smart-items>ul>li>div>h3 {
+    text-align: center;
+}
+
+li.hamb-life-items>ul>li>div:hover {
+    color: orangered;
+}
