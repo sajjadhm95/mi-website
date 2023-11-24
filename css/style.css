@@ -56,7 +56,7 @@ body {
 }
 
 .por {
-  transition: 10s;
+  transition: linear 5s;
   width: 100% !important;
 }
 
@@ -74,7 +74,7 @@ nav {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 0 16px;
+  padding: 0 32px;
 }
 
 div.nav-left {
@@ -95,6 +95,24 @@ div.nav-right {
 }
 
 /* .........................Header-top...................... */
+i.fa-brands.fa-xing {
+  color: #ffffff;
+  background-color: orangered;
+  font-size: 2em;
+  margin-right: 10px;
+  border-radius: 30%;
+  z-index: 0;
+}
+
+i.fa-solid.fa-house {
+  z-index: 1;
+  color: #ffffff;
+  background-color: orangered;
+  font-size: 2em;
+  margin-right: 10px;
+  border-radius: 30%;
+}
+
 .nav-left-phone-items {
   z-index: 999;
   position: absolute;
@@ -363,25 +381,19 @@ section#banner > div > div.banner-sabet-slider {
   gap: 15px;
 }
 
-section#banner > div > div.banner-sabet-slider > div {
-  /* position: absolute; */
+section#banner > div > div.banner-sabet-slider > div.one {
   background-color: whitesmoke;
   width: 88px;
   height: 2px;
-  /* top: 50%;
-  right: 10px;
-  transform: translateY(-50%); */
-}
-
-div.banner-sabet-slider > div.one {
   position: relative;
+  background-color: rgb(190, 190, 190);
 }
 
 div.banner-sabet-slider > div.one > p {
   position: absolute;
-  width: 100%;
+  width: 0%;
   height: 2px;
-  background-color: green;
+  background-color: orangered;
 }
 
 section#banner > div#banner-slider1 {
@@ -1204,6 +1216,9 @@ footer li:hover {
   }
   div.sec-support-item {
     width: 48% !important;
+  }
+  section#banner > div > div.banner-sabet-slider > div.one {
+    width: 44px !important;
   }
 }
 .menu-left-icons > ul {

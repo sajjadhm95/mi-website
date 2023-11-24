@@ -1,7 +1,6 @@
 `use strict`
 
 let hambIcon = document.querySelector('li.nav-hambe-icon')
-// let hambIconUl = document.querySelector('.nav-hambe-icon>ul')
 let closeIcon = document.querySelector('ul>li>i#close')
 let plusIcon = document.querySelectorAll('ul>li>i.bx.bx-plus')
 let minusIcon = document.querySelectorAll('ul>li>i.bx.bx-minus')
@@ -118,7 +117,7 @@ let bannerChevRight = document.querySelector('div#banner-sabet>i.bx.bxs-chevron-
 let bannerBottSlider = document.querySelectorAll('div.banner-sabet-slider>div.one>p')
 
 let count = 0
-let count1 = 0
+let count1 = count
 let intervalId;
 
 function slidernext() {
@@ -131,46 +130,66 @@ function slidernext() {
     count++;
     bannerSlides[count].classList.remove('hide');
 }
+
 function sliderBott() {
+    count1 = count ;
     bannerBottSlider.forEach(e => {
-        e.style.width = '0px' ;
+        e.classList.remove('por');
     });
-    if (count1 === bannerBottSlider.length - 1) {
-        count1 = -1;
-    }
-    count1++;
     bannerBottSlider[count1].classList.add('por');
 }
+
+
+
 
 intervalId = setInterval(() => {
     slidernext()
     sliderBott()
 }, 5000);
 
+
 bannerChevRight.addEventListener('click', () => {
     clearInterval(intervalId);
     bannerSlides.forEach(e => {
         e.classList.add('hide')
     })
+    
+    bannerBottSlider.forEach(e => {
+        e.classList.remove('por');
+    });
     if (count === bannerSlides.length - 1) {
         count = -1
     }
     count++
+    count1 = count ;
     bannerSlides[count].classList.remove('hide')
-    intervalId = setInterval(slidernext, 5000);
+    bannerBottSlider[count1].classList.add('por');
+    intervalId = setInterval(() => {
+        slidernext()
+        sliderBott()
+    }, 5000);
 })
+
 
 bannerChevLeft.addEventListener('click', () => {
     clearInterval(intervalId);
     bannerSlides.forEach(e => {
         e.classList.add('hide')
     })
+    bannerBottSlider.forEach(e => {
+        e.classList.remove('por');
+    });
     if (count === 0) {
         count = bannerSlides.length
     }
     count--
+    count1 = count ;
     bannerSlides[count].classList.remove('hide')
-    intervalId = setInterval(slidernext, 5000);
+    bannerBottSlider[count1].classList.add('por');
+    intervalId = setInterval(() => {
+        slidernext()
+        sliderBott()
+    }, 5000);
 })
 
 // ..........................................featured section..........................................
@@ -221,7 +240,6 @@ document.addEventListener('click', (event) => {
 
 // JavaScript
 document.addEventListener('DOMContentLoaded', function () {
-    var body = document.body;
     var navItems = document.querySelectorAll('.nav-left-phone');
 
 
@@ -247,4 +265,15 @@ document.addEventListener('DOMContentLoaded', function () {
         navItem.addEventListener('mouseover', addDarkClass);
         navItem.addEventListener('mouseleave', removeDarkClass);
     });
+});
+
+const logoIcon = document.querySelector('i.fa-brands.fa-xing')
+const HomeIcon = document.querySelector('i.bx.bxs-balloon')
+logoIcon.addEventListener('mouseenter', ()=>{
+    logoIcon.classList.add('hide')
+    HomeIcon.classList.remove('hide')
+});
+logoIcon.addEventListener('mouseleave', ()=>{
+    logoIcon.classList.remove('hide')
+    HomeIcon.classList.add('hide')
 });

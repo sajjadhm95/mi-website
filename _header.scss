@@ -8,7 +8,7 @@ nav {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 0 16px;
+    padding: 0 32px;
 }
 
 div.nav-left {
@@ -19,7 +19,7 @@ div.nav-left {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    
+
 
 }
 
@@ -34,6 +34,28 @@ div.nav-right {
 }
 
 /* .........................Header-top...................... */
+
+i.fa-brands.fa-xing {
+    color: #ffffff;
+    background-color: orangered;
+    font-size: 2em;
+    margin-right: 10px;
+    border-radius: 30%;
+    z-index: 0;
+}
+
+// i.fa-brands.fa-xing:hover {
+//     display: none;
+// }
+
+i.fa-solid.fa-house {
+    z-index: 1;
+    color: #ffffff;
+    background-color: orangered;
+    font-size: 2em;
+    margin-right: 10px;
+    border-radius: 30%;
+}
 
 .nav-left-phone-items {
     z-index: 999;

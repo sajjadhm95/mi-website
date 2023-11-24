@@ -42,25 +42,19 @@ section#banner>div>div.banner-sabet-slider {
 
 }
 
-section#banner>div>div.banner-sabet-slider>div {
-    /* position: absolute; */
+section#banner>div>div.banner-sabet-slider>div.one {
     background-color: whitesmoke;
     width: 88px;
     height: 2px;
-    /* top: 50%;
-    right: 10px;
-    transform: translateY(-50%); */
+    position: relative;
+    background-color: rgb(190, 190, 190);
 }
 
-div.banner-sabet-slider>div.one{
-    position: relative;
-}
 div.banner-sabet-slider>div.one>p{
     position: absolute;
-    width: 100%;
+    width: 0%;
     height: 2px;
-    background-color: green;
-    // transition: all 20s;
+    background-color: orangered;
 }
 
 section#banner>div#banner-slider1 {
