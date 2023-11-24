@@ -1,0 +1,148 @@
+nav {
+    background-color: rgba(255, 255, 255, 1);
+    min-height: 48px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 16px;
+}
+
+div.nav-left {
+    width: 50%;
+    height: 100%;
+    // background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+
+}
+
+div.nav-right {
+    width: 50%;
+    height: 100%;
+    // background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+/* .........................Header-top...................... */
+
+.nav-left-phone-items {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    min-height: 150px;
+    padding: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 48px;
+    transition: all 0.7s;
+    color: black !important;
+    background-color: whitesmoke;
+}
+
+.nav-left-phone:hover .nav-left-phone-items {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-left-phone-items>li:hover {
+    color: orangered !important;
+}
+
+.nav-left-smart-items {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    min-height: 150px;
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly !important;
+    flex-wrap: wrap;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 48px;
+    transition: all 0.7s;
+    color: black !important;
+    background-color: whitesmoke;
+
+}
+
+.nav-left-smart:hover .nav-left-smart-items {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-left-smart-items>li:hover {
+    color: orangered !important;
+}
+
+.nav-left-life-items {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    min-height: 150px;
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly !important;
+    flex-wrap: wrap;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 48px;
+    transition: all 0.7s;
+    color: black !important;
+    background-color: whitesmoke;
+
+}
+
+.nav-left-life:hover .nav-left-life-items {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-left-life-items>li:hover {
+    color: orangered !important;
+}
+
+ul>li>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // border: 1px solid yellow;
+    padding: 20px 0;
+    gap: 20px;
+    width: 120px;
+    height: fit-content;
+    /* margin: 20px auto; */
+}
+
+ul>li>div>i {
+    font-size: 1.8em;
+}
+
+.nav-hambe-icon {
+    /* position: relative; */
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}

@@ -1,0 +1,75 @@
+@font-face {
+    font-family: roboto;
+    src: url(../Roboto-Fontjo.com/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: b-nazanin;
+    src: url(../B_NAZANIN/B_NAZANIN/B-NAZANIN.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul:not(.phone-bot),
+ul:not(.phone-top) {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    // color: white;
+
+}
+
+li {
+    font-size: 16px;
+}
+
+body {
+    height: fit-content;
+    // padding: 0 5%;
+
+}
+
+:root {
+    --padding-side: 0 15%;
+    --top150: 15%;
+    --top200: 23%;
+    --font-size-smaller: 16px;
+    --font-size-small: 18px;
+    --font-size-medium: 22px;
+    --font-size-large: 40px;
+}
+
+.hide {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+}
+
+.select-decoration {
+    border-bottom: 1px solid orangered !important;
+    color: orangered !important;
+}
+
+.por{
+    transition: 5s;
+    width: 100% !important;
+}
+
+.dark:not(nav, nav *) {
+    opacity: 0.4;
+    // filter: grayscale(1) !important;
+    // filter: opacity(0.5);
+  }
+  

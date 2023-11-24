@@ -1,0 +1,103 @@
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer h3:hover,
+footer li:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+#footer-main {
+    width: 100%;
+    height: fit-content;
+    /* background-color: yellow; */
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    gap: 100px;
+}
+
+#footer-main-left {
+    /* background-color: lightcoral; */
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#footer-main-left h2 {
+    margin-bottom: 20px;
+}
+
+#footer-main-left ul {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    color: inherit;
+}
+
+#footer-main-right {
+    /* background-color: lightgreen; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
+}
+
+#footer-main-right i {
+    margin: 15px 10px 0 0;
+    font-size: 1.5em;
+}
+
+#footer-bott {
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    /* background-color: lightgreen; */
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+#footer-bott1 {
+    flex: 1;
+    /* height: 100%; */
+    /* background-color: rgb(20, 163, 20); */
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#footer-bott2 {
+    flex: 2;
+    /* background-color: rgb(185, 223, 19); */
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#footer-bott2>h3 {
+    padding-left: 10px;
+}
