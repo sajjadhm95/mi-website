@@ -84,7 +84,7 @@
     #grid-slider1-bott-item5,
     #grid-slider1-bott-item6 {
         height: 192px;
-        width: 48% !important;
+        width: 46% !important;
         gap: 0 !important;
 
     }
@@ -185,14 +185,13 @@
     }
 
     section#featured-product>ul>li {
-        font-size: 0.6em;
+        font-size: 0.7em;
         height: 20px;
         font-weight: bold;
     }
-}
-
-.menu-left-icons>ul {
-    gap: 12px;
+    .select-decoration{
+        border-bottom: none !important;
+    }
 }
 
 

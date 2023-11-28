@@ -221,7 +221,10 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         724: {
-            slidesPerView: 1
+            slidesPerView: 3
+        },
+        1024: {
+            slidesPerView: 2
         }
     }
 });
@@ -229,6 +232,8 @@ var swiper = new Swiper(".mySwiper", {
 window.addEventListener('resize', function () {
     if (window.innerWidth < 724) {
         swiper.params.slidesPerView = 1;
+    } else if (window.innerWidth >= 724 && window.innerWidth < 1024) {
+        swiper.params.slidesPerView = 2;
     } else {
         swiper.params.slidesPerView = 3;
     }

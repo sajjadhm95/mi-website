@@ -164,6 +164,7 @@ i.fa-solid.fa-house {
   transition: all 0.7s;
   color: black !important;
   background-color: whitesmoke;
+  text-align: center;
 }
 
 .nav-left-smart:hover .nav-left-smart-items {
@@ -193,6 +194,7 @@ i.fa-solid.fa-house {
   transition: all 0.7s;
   color: black !important;
   background-color: whitesmoke;
+  text-align: center;
 }
 
 .nav-left-life:hover .nav-left-life-items {
@@ -536,11 +538,16 @@ section#featured-product > h1 {
 
 section#featured-product > ul {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 section#featured-product > ul > li {
   height: 25px;
   color: black;
+  text-align: center;
 }
 
 #grid-slider {
@@ -1228,7 +1235,7 @@ footer li:hover {
   #grid-slider1-bott-item5,
   #grid-slider1-bott-item6 {
     height: 192px;
-    width: 48% !important;
+    width: 46% !important;
     gap: 0 !important;
   }
   #grid-slider2-top {
@@ -1311,15 +1318,14 @@ footer li:hover {
     width: 44px !important;
   }
   section#featured-product > ul > li {
-    font-size: 0.6em;
+    font-size: 0.7em;
     height: 20px;
     font-weight: bold;
   }
+  .select-decoration {
+    border-bottom: none !important;
+  }
 }
-.menu-left-icons > ul {
-  gap: 12px;
-}
-
 @media only screen and (min-width: 720px) and (max-width: 1024px) {
   /* section.hamb {
       display: none !important;
