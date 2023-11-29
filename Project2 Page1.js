@@ -229,7 +229,7 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-window.addEventListener('resize', function () {
+function updateSlidesPerView() {
     if (window.innerWidth < 724) {
         swiper.params.slidesPerView = 1;
     } else if (window.innerWidth >= 724 && window.innerWidth < 1024) {
@@ -238,7 +238,12 @@ window.addEventListener('resize', function () {
         swiper.params.slidesPerView = 3;
     }
     swiper.update(); // Update the swiper instance after changing slidesPerView
-});
+}
+
+window.addEventListener('resize', updateSlidesPerView);
+
+// Initial call to set the correct number of slides on page load
+updateSlidesPerView();
 // ..........................................search section..........................................
 
 const searchIcon = document.querySelector('li.search');
