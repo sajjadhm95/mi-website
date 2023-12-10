@@ -73,7 +73,9 @@ i.fa-solid.fa-house {
     top: 48px;
     transition: all 0.7s;
     color: black !important;
-    background-color: whitesmoke;
+    background-color: rgb(230, 230, 230);
+    backdrop-filter: blur(30px) !important;
+    box-shadow: 10px 9px 21px -1px rgba(33,18,117,0.8);
 }
 .nav-left-phone-items>li{
     font-size: 1.2em;
